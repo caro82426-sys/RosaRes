@@ -1,0 +1,178 @@
+:root {
+  --rose-50: #fdf7fa;
+  --rose-100: #f8e9f0;
+  --rose-200: #f4d4e4;
+  --rose-400: #e59dbd;
+  --rose-500: #d8769f;
+  --rose-700: #9b4f6f;
+  --teal-500: #0f8b8d;
+  --teal-600: #0b6d75;
+  --ink: #2c1f2b;
+  --muted: #6b5a63;
+  --bg: #fff;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --shadow: 0 18px 35px rgba(216, 118, 159, 0.25);
+  font-family: 'Quicksand', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font, 'Quicksand', sans-serif);
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--rose-50);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  color: var(--ink);
+}
+
+p {
+  margin: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: var(--teal-500);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 20;
+  border-radius: 12px;
+}
+
+.skip-link:focus {
+  left: 16px;
+}
+
+.eyebrow {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rose-700);
+}
+
+.lede {
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.pill-btn,
+.ghost-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1.5rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.pill-btn {
+  background: var(--teal-500);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(15, 139, 141, 0.25);
+}
+
+.pill-btn:hover,
+.pill-btn:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(15, 139, 141, 0.35);
+}
+
+.ghost-btn {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid rgba(11, 109, 117, 0.3);
+}
+
+.ghost-btn:hover,
+.ghost-btn:focus-visible {
+  background: rgba(11, 109, 117, 0.08);
+}
+
+.section-head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.nav-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  border: none;
+  background: var(--teal-500);
+  color: #fff;
+  font-size: 1.5rem;
+  z-index: 40;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 30;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.socials a svg,
+.whatsapp-btn svg,
+.icon-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}

@@ -1,0 +1,152 @@
+.story,
+.presentations,
+.duo,
+.offers,
+.club,
+.quick-links {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.story-grid,
+.presentations-grid,
+.duo-grid,
+.offers-grid,
+.club-grid,
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.story-text,
+.story-visual {
+  background: var(--rose-50);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+.story-visual picture,
+.story-visual img {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.product-card {
+  background: var(--rose-100);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.product-card img {
+  margin: 0 auto 1rem;
+  max-width: 180px;
+}
+
+.duo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.duo-media picture {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.offers-grid,
+.quick-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.offer-card {
+  background: var(--rose-50);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
+  border: 1px solid rgba(229, 157, 189, 0.35);
+}
+
+.offer-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: var(--teal-500);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.club-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.club-copy,
+.club-form {
+  background: var(--rose-100);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+.club-form label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.club-form input,
+.club-form select,
+.club-form textarea {
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-family: inherit;
+}
+
+.quick-card {
+  background: var(--rose-100);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.hero-simple {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.hero-simple img {
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+}
+
+.hero-simple picture {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: block;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .story,
+  .presentations,
+  .duo,
+  .offers,
+  .club,
+  .quick-links {
+    padding: 1.5rem;
+  }
+}

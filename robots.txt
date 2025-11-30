@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clubrosares.netlify.app/sitemap.xml
