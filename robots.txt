@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://clubrosares.netlify.app/sitemap.xml
+Sitemap: https://myrosares.netlify.app/sitemap.xml
