@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://myrosares.netlify.app/sitemap.xml
